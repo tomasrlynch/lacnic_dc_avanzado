@@ -3,9 +3,11 @@ ip link add dev dummy1 type dummy
 ip link set dummy1 up
 ip addr add dev dummy1 2001:db8:5::5/128
 apk add iputils mtr bird
-mv /etc/bird.conf /etc/bird.conf.bak
-touch /etc/bird.conf
-cat >> /etc/bird.conf<<EOF
+cat >> /etc/bird_add.conf<<EOF
+protocol static {
+    ipv6;
+    route 2001:db8:5::/48 blackhole;
+}
 protocol bgp leaf1 {
     description "Leaf1";
     local 2001:db8:aa:5::5 as 64505;
@@ -15,10 +17,7 @@ protocol bgp leaf1 {
         export all;
     };
 }
-protocol static {
-        ipv6;
-        route 2001:db8:5::/48 blackhole;
-}
 EOF
+cat /etc/bird_add.conf >> /etc/bird.conf
 bird
 birdc config
