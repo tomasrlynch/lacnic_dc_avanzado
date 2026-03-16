@@ -27,4 +27,14 @@ neighbor {{ ngb.ipv6 }} route-map CLIENTE_{{ ngb.name.upper() }}_IMPORTAR in
 neighbor {{ ngb.ipv6 }} route-map CLIENTE_{{ ngb.name.upper() }}_EXPORTAR out
 neighbor {{ ngb.ipv6 }} maximum-prefix 100
 {% endfor %}
-
+{% if bgp.as == 4220010001 %}
+router bgp {{ bgp.as }}
+neighbor 2001:db8:aa:5::7 remote-as 64505
+neighbor 2001:db8:aa:5::7 local-as 64500 no-prepend replace-as
+neighbor 2001:db8:aa:5::7 description bird
+address-family ipv6 unicast
+neighbor 2001:db8:aa:5::7 activate
+neighbor 2001:db8:aa:5::7 maximum-prefix 100
+neighbor 2001:db8:aa:5::7 route-map CLIENTE_HOST1_IMPORTAR in
+neighbor 2001:db8:aa:5::7 route-map CLIENTE_HOST1_EXPORTAR out
+{% endif %}
