@@ -8,7 +8,7 @@ touch /etc/bird.conf
 cat >> /etc/bird.conf<<EOF
 protocol bgp leaf1 {
     description "Leaf1";
-    local 2001:db8:aa:5::7 as 64505;
+    local 2001:db8:aa:5::5 as 64505;
     neighbor 2001:db8:aa:5::a as 64500;
     ipv6 {
         import all;
