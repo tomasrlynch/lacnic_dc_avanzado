@@ -1,6 +1,6 @@
 ---
 provider: clab
-defaults.device: frr 
+defaults.device: frr
 module: [ bgp ]
 plugin: [ bgp.session, ebgp.multihop ]
 #plugin: [ bgp.session ]
@@ -12,7 +12,7 @@ addressing:
     core:
         unnumbered: true
     p2p:
-        ipv4: 
+        ipv4:
         ipv6: 2001:db8:ff::/48
     loopback:
         ipv4:
@@ -93,6 +93,9 @@ groups:
         config: [ leaves.j2 ]
     hosts:
         members: [ host1, host2, host3, host4 ]
+    bird_hosts:
+        members: [ bird ]
+        config: [ bird_host.j2 ]
     borde:
         members: [ borde1, borde2 ]
         device: vyos
