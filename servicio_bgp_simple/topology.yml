@@ -38,6 +38,7 @@ nodes:
         bgp.as: 64504
         loopback.ipv6: 2001:db8:4::4/48
     bird:
+        id: 7
         device: linux
     leaf1:
         id: 10
