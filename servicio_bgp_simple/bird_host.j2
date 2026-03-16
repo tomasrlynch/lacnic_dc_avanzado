@@ -1,0 +1,24 @@
+sysctl -w net.ipv6.conf.all.forwarding=1
+ip link add dev dummy1 type dummy
+ip link set dummy1 up
+ip addr add dev dummy1 2001:db8:5::5/128
+apk add iputils mtr bird
+mv /etc/bird.conf /etc/bird.conf.bak
+touch /etc/bird.conf
+cat >> /etc/bird.conf<<EOF
+protocol bgp leaf1 {
+    description "Leaf1";
+    local 2001:db8:aa:5::7 as 64505;
+    neighbor 2001:db8:aa:5::a as 64500;
+    ipv6 {
+        import all;
+        export all;
+    };
+}
+protocol static {
+        ipv6;
+        route 2001:db8:5::/48 blackhole;
+}
+EOF
+bird
+birdc config
