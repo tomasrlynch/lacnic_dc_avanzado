@@ -1,5 +1,9 @@
 # Servicios Avanzados de Data Centers - LACNIC
 
+Para estos cursos, los laboratorios son generados automáticamente utilizando [netlab](https://netlab.tools/). Cada uno de los directorios de los laboratorios tiene un archivo `topology.yml` y configuraciones de soporte con extensión `.j2` que son utilizados por netlab para crear cada una de las topologías con las que trabajamos.
+> [!NOTE]
+> Las configuraciones de los hosts no se muestran debido a que hay muchas maneras distintas de configurarlos y en este curso son simples servidores Linux. En los laboratorios utilizaremos Alpine Linux ya que viene por defecto en netlab.
+
 ## Contenido
 - [Instalación de netlab](#instalación-de-netlab)
 - [Laboratorios](#laboratorios)
@@ -10,10 +14,6 @@
   - [Interconexión de Data Centers (DCI)](#interconexión-de-data-centers-dci)
   - [Interconexión de Data Centers (DCI) para Múltiples Data Centers](#interconexión-de-data-centers-dci-para-múltiples-data-centers)
 - [Configuraciones Finales](#configuraciones-finales)
-
-Para estos cursos, los laboratorios son generados automáticamente utilizando [netlab](https://netlab.tools/). Cada uno de los directorios de los laboratorios tiene un archivo `topology.yml` y configuraciones de soporte con extensión `.j2` que son utilizados por netlab para crear cada una de las topologías con las que trabajamos.
-> [!NOTE]
-> Las configuraciones de los hosts no se muestran debido a que hay muchas maneras distintas de configurarlos y en este curso son simples servidores Linux. En los laboratorios utilizaremos Alpine Linux ya que viene por defecto en netlab.
 
 ## Instalación de netlab
 Pueden instalar netlab siguiendo los pasos de la [página de instalación](https://netlab.tools/install/). A veces al instalarlo aparece un error, [sigan estos pasos](https://github.com/tomasrlynch/lacnic_dc_ipv6/blob/main/netlab_manual_de_uso.md) para subsanarlo.
