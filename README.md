@@ -1,8 +1,6 @@
 # Servicios Avanzados de Data Centers - LACNIC
 
 Para estos cursos, los laboratorios son generados automáticamente utilizando [netlab](https://netlab.tools/). Cada uno de los directorios de los laboratorios tiene un archivo `topology.yml` y configuraciones de soporte con extensión `.j2` que son utilizados por netlab para crear cada una de las topologías con las que trabajamos.
-> [!NOTE]
-> Las configuraciones de los hosts no se muestran debido a que hay muchas maneras distintas de configurarlos y en este curso son simples servidores Linux. En los laboratorios utilizaremos Alpine Linux ya que viene por defecto en netlab.
 
 ## Contenido
 - [Instalación de netlab](#instalación-de-netlab)
@@ -82,3 +80,7 @@ Los archivos de configuración de este laboratorio se encuentran en [DCI con Rou
 
 ## Configuraciones Finales
 Las configuraciones finales de todos los laboratorios se encuentran en [configuraciones](https://github.com/tomasrlynch/lacnic_dc_avanzado/tree/main/configuraciones).
+
+> [!NOTE]
+> Las configuraciones de los hosts no se muestran debido a que hay muchas maneras distintas de configurarlos y en este curso son simples servidores Linux. En los laboratorios utilizaremos Alpine Linux ya que viene por defecto en netlab.
+
