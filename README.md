@@ -3,6 +3,9 @@ Para estos cursos, los laboratorios son generados automáticamente utilizando [n
 > [!NOTE]
 > Las configuraciones de los hosts no se muestran debido a que hay muchas maneras distintas de configurarlos y en este curso son simples servidores Linux. En los laboratorios utilizaremos Alpine Linux ya que viene por defecto en netlab.
 
+## Instalación de netlab
+Pueden instalar netlab siguiendo los pasos de la [página de instalación](https://netlab.tools/install/). A veces al instalarlo aparece un error, [sigan estos pasos](https://github.com/tomasrlynch/lacnic_dc_ipv6/blob/main/netlab_manual_de_uso.md) para subsanarlo.
+
 ## Laboratorios 
 El curso de Servicios Avanzados cuenta con seis laboratorios. El primero es de BGP para clientes y los restantes están basados en VXLAN y EVPN.
 
