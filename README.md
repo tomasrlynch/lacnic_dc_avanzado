@@ -14,7 +14,7 @@ El laboratorio muestra las configuraciones necesarias en los Leaves y Hosts para
 - Cuatro Hosts
 
 Con esta base se arman dos laboratorios muy parecidos pero que difieren en la configuración de los Hosts:
-1. Servicio Básico de BGP en `./configuraciones/servicio_bgp_simple`
+1. Servicio Básico de BGP en [./configuraciones/servicio_bgp_simple](https://github.com/tomasrlynch/lacnic_dc_avanzado/tree/main/servicio_bgp_simple)
 2. Servicio Anycast de BGP en `./configuraciones/servicio_bgp_anycast`
 
 Templates netlab:
