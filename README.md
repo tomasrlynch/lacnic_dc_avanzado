@@ -1,4 +1,15 @@
 # Servicios Avanzados de Data Centers - LACNIC
+## Contenido
+- [Instalación de netlab](#instalación-de-netlab)
+- [Laboratorios](#laboratorios)
+  - [Servicio de BGP](#servicio-de-bgp)
+  - [Servicio de Redes Privadas Capa 2](#servicio-de-redes-privadas-capa-2)
+  - [Servicio de Redes Privadas Capa 3](#servicio-de-redes-privadas-capa-3)
+  - [Servicio de Conexión Externa](#servicio-de-conexión-externa)
+  - [Interconexión de Data Centers (DCI)](#interconexión-de-data-centers-dci)
+  - [Interconexión de Data Centers (DCI) para Múltiples Data Centers](#interconexión-de-data-centers-dci-para-múltiples-data-centers)
+- [Configuraciones Finales](#configuraciones-finales)
+
 Para estos cursos, los laboratorios son generados automáticamente utilizando [netlab](https://netlab.tools/). Cada uno de los directorios de los laboratorios tiene un archivo `topology.yml` y configuraciones de soporte con extensión `.j2` que son utilizados por netlab para crear cada una de las topologías con las que trabajamos.
 > [!NOTE]
 > Las configuraciones de los hosts no se muestran debido a que hay muchas maneras distintas de configurarlos y en este curso son simples servidores Linux. En los laboratorios utilizaremos Alpine Linux ya que viene por defecto en netlab.
